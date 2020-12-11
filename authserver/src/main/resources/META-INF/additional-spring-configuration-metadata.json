@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "config.oauth2.clientid",
+    "type": "java.lang.String",
+    "description": "A description for 'config.oauth2.clientid'"
+  },
+  {
+    "name": "config.oauth2.privateKey",
+    "type": "java.lang.String",
+    "description": "A description for 'config.oauth2.privateKey'"
+  },
+  {
+    "name": "config.oauth2.clientSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'config.oauth2.clientSecret'"
+  },
+  {
+    "name": "config.oauth2.publicKey",
+    "type": "java.lang.String",
+    "description": "A description for 'config.oauth2.publicKey'"
+  },
+  {
+    "name": "config.jpa.database-platform",
+    "type": "java.lang.String",
+    "description": "A description for 'config.jpa.database-platform'"
+  },
+  {
+    "name": "config.h2.console.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'config.h2.console.enabled'"
+  }
+]}

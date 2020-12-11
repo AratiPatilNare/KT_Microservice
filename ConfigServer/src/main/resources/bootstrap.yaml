@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: C:\labs\config-server-repo          clone-on-start: true  application:    name: Config-Server
+          
+server:  port: 8101
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  
