@@ -1,0 +1,21 @@
+server:
+  port: 8130
+  
+spring:  cloud:    gateway:      routes:      - id: productservice
+        uri: lb://Product-Service
+        predicates:        - Path=/product/**
+      - id: taxservice
+        uri: lb://Tax-Service
+        predicates:
+        - Path=/tax/** 
+           application:    name: API-Gateway
+    
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.int}
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 1
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+                  
